@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Encriptador-GUI2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/production/Encriptador-GUI/production/Encriptador-GUI/okhttp-4.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/production/Encriptador-GUI/production/Encriptador-GUI/jackson-module-kotlin-2.12.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/production/Encriptador-GUI/production/Encriptador-GUI/jackson-databind-2.12.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/production/Encriptador-GUI/production/Encriptador-GUI/controlsfx-8.40.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/production/Encriptador-GUI/production/Encriptador-GUI/jackson-core-2.12.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/production/Encriptador-GUI/production/Encriptador-GUI/controlsfx-11.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.EjemploControlador">
+    <stylesheets>
+        <URL value="@ejemplovista.css" />
+    </stylesheets>
+   <children>
+      <Button fx:id="btnBoton" layoutX="229.0" layoutY="301.0" mnemonicParsing="false" onAction="#click" prefHeight="25.0" prefWidth="142.0" text="Convertir" />
+      <ImageView fitHeight="51.0" fitWidth="142.0" layoutX="236.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/Logo@2x.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="371.0" layoutY="124.0" prefHeight="27.0" prefWidth="152.0" />
+      <ComboBox fx:id="selectorPaisFrom" editable="true" layoutX="78.0" layoutY="164.0" prefHeight="37.0" prefWidth="152.0" />
+      <TextField layoutX="77.0" layoutY="125.0" prefHeight="27.0" prefWidth="152.0" />
+   </children>
+</AnchorPane>

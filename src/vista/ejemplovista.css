@@ -1,0 +1,137 @@
+
+/* Aplica el estilo a todo el AnchorPane */
+.mainFxmlClass {
+    -fx-background-color: #F3F5FC; /* Color de fondo blanco */
+}
+
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../static/Inter-Regular.ttf');
+}
+
+#texto {
+    -fx-font-family: 'Inter';
+    -fx-font-style: normal;
+    -fx-font-weight: 400;
+    -fx-font-size: 20px;
+    -fx-line-height: 150%;
+}
+
+/* Define la apariencia general del ComboBox */
+#selectorPaisTo, #selectorPaisFrom {
+    -fx-background-color: #343A40;
+    -fx-border-color: #0A3871;
+    -fx-border-width: 2;
+    -fx-background-color: #f0f0f0;
+    -fx-border-radius: 15;
+    -fx-background-radius: 10px;
+    -fx-padding: 5px;
+}
+
+/* Define el color de texto y fondo del ComboBox cuando está abierto */
+#selectorPaisTo-popup .list-cell, #selectorPaisFrom-popup .list-cell {
+    -fx-background-color: #F3F5FC;
+    -fx-text-fill: #343A40;
+}
+
+/* Define el color de texto y fondo del ComboBox cuando está cerrado */
+#selectorPaisTo .cell,#selectorPaisTo .text-field,
+#selectorPaisFrom .text-field, #selectorPaisTFrom .cell {
+    -fx-background-color: #F3F5FC;
+    -fx-text-fill: #343A40;
+}
+#selectorPaisTo .arrow-button, #selectorPaisFrom .arrow-button {
+    -fx-background-color: #f0f0f0;
+}
+
+/* Define el color de la flecha del ComboBox */
+#selectorPaisTo .arrow, #selectorPaisFrom .arrow {
+    -fx-background-color: #0A3871;
+}
+#selectorPaisTo .text-field, #selectorPaisFrom .text-field {
+    -fx-background-color: #f0f0f0;
+}
+
+
+
+
+#textoConversor {
+    -fx-font-family: 'Inter';
+    -fx-font-style: normal;
+    -fx-font-weight: 400;
+    -fx-font-size: 49px;
+    -fx-line-height: 150%;
+    -fx-border-width: 0px;
+    -fx-text-fill: #0A3871;
+    -fx-background-color: #0A3871;
+    -fx-resize: none;
+    -fx-padding: 0;
+    -fx-margin: 0;
+}
+
+
+
+#selectorPaisFrom .list-cell, #selectorPaisTo .list-cell {
+    -fx-font-family: 'Inter';
+    -fx-font-style: normal;
+    -fx-font-weight: 400;
+    -fx-font-size: 14px;
+    -fx-line-spacing: 1.2;
+    -fx-text-fill: #0A3871;
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+}
+
+.combo-box-popup > .list-view {
+    -fx-background-radius: 10;
+}
+
+.combo-box-popup .list-view .list-cell{
+    -fx-background-radius: 10;
+}
+
+
+#selectorPaisFrom .list-cell:hover, #selectorPaisTo .list-cell:hover {
+    -fx-background-color: #8cb7fc;
+}
+
+
+#selectorPaisFrom .list-cell:selected, #selectorPaisTo .list-cell:selected {
+    -fx-background-color: #0A3871;
+    -fx-text-fill: #FFFFFF;
+}
+
+
+
+
+/* Estilo del botón */
+#btnBoton {
+    -fx-cursor: hand; /* cursor: pointer; */
+    -fx-background-radius: 24px; /* border-radius: 24px; */
+    -fx-background-color: #0A3871; /* background: #0A3871; */
+    -fx-border-color: #0A3871; /* border: 1px solid #0A3871; */
+    -fx-border-width: 1px; /* especifica el ancho del borde */
+    -fx-border-radius: 24px;
+    -fx-text-fill: white;
+}
+#intercambiarSeleccion {
+    -fx-cursor: hand;
+}
+
+
+
+
+/* Estilo del botón cuando se pasa el ratón sobre él */
+#btnBoton:hover {
+    -fx-background-color: #0056b3; /* Color de fondo azul oscuro cuando se pasa el ratón sobre él */
+}
+
+#cantidadTo , #cantidadFrom{
+    -fx-border-color: #343A40;
+    -fx-border-radius: 15;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 15;
+    -fx-padding: 10px;
+
+}

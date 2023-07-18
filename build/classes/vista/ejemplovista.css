@@ -1,0 +1,21 @@
+
+/* Aplica el estilo a todo el AnchorPane */
+.mainFxmlClass {
+    -fx-background-color: #FFFFFF; /* Color de fondo blanco */
+}
+
+/* Estilo del botón */
+#btnBoton {
+    -fx-cursor: hand; /* cursor: pointer; */
+    -fx-background-radius: 24px; /* border-radius: 24px; */
+    -fx-background-color: #0A3871; /* background: #0A3871; */
+    -fx-border-color: #0A3871; /* border: 1px solid #0A3871; */
+    -fx-border-width: 1px; /* especifica el ancho del borde */
+    -fx-border-radius: 24px;
+    -fx-text-fill: white;
+}
+
+/* Estilo del botón cuando se pasa el ratón sobre él */
+#btnBoton:hover {
+    -fx-background-color: #0056b3; /* Color de fondo azul oscuro cuando se pasa el ratón sobre él */
+}

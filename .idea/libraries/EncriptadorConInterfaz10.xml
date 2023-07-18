@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="EncriptadorConInterfaz10">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/EncriptadorConInterfaz.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

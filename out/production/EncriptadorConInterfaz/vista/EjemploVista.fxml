@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="534.0" prefWidth="810.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.EjemploControlador">
+    <stylesheets>
+        <URL value="@ejemplovista.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="51.0" fitWidth="142.0" layoutX="15.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/Logo@2x.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="cantidadTo" editable="false" layoutX="476.0" layoutY="254.0" prefHeight="27.0" prefWidth="255.0" promptText="0.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></TextField>
+      <ComboBox fx:id="selectorPaisFrom" editable="true" layoutX="79.0" layoutY="304.0" onAction="#handleComboBoxSelection" prefHeight="37.0" prefWidth="255.0" promptText="Ej: CLP" visibleRowCount="6" />
+      <TextField fx:id="cantidadFrom" layoutX="79.0" layoutY="254.0" prefHeight="27.0" prefWidth="255.0" promptText="0.0" />
+      <ComboBox fx:id="selectorPaisTo" editable="true" layoutX="476.0" layoutY="304.0" onAction="#handleComboBoxSelection" prefHeight="37.0" prefWidth="255.0" promptText="Ej: USD" visibleRowCount="6">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></ComboBox>
+      <ImageView fx:id="intercambiarSeleccion" fitHeight="62.0" fitWidth="74.0" layoutX="374.0" layoutY="262.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/Diseño_sin_título__1_-removebg-preview%20(1).png" />
+         </image>
+      </ImageView>
+      <Text fx:id="textoConversor" fill="#0a3871" layoutX="198.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conversor de Divisas" wrappingWidth="475.0">
+         <font>
+            <Font size="37.0" />
+         </font></Text>
+      <Text fx:id="texto" fill="#343a40" layoutX="176.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desde" wrappingWidth="61.02105712890625" />
+      <Text fx:id="texto" fill="#343a40" layoutX="579.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hacia" />
+   </children>
+</AnchorPane>
