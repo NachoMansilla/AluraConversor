@@ -25,3 +25,4 @@ build/
 *.pyc
 *.save
 .DS_Store
+/out/

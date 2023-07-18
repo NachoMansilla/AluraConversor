@@ -181,6 +181,15 @@ public class EjemploControlador implements Initializable {
 
 
     @FXML
+    private void click(ActionEvent event) {
+
+
+        //System.out.println("controlador.EjemploControlador.click()");
+
+
+
+    }
+    @FXML
     private void handleComboBoxSelection(ActionEvent event) {
         String selectedValueFrom = selectorPaisFrom.getSelectionModel().getSelectedItem();
         String selectedValueTo = selectorPaisTo.getSelectionModel().getSelectedItem();

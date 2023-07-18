@@ -2,6 +2,11 @@
 
 Bienvenidos al primer desafío del Challenge Java. En este proyecto, hemos desarrollado un convertidor de divisas utilizando el lenguaje Java y con soporte para más de 170+ divisas.
 
+![gif_programa](tuto.gif)
+
+
+
+
 ## ✅ Requisitos
 
 El convertidor de moneda incluye las siguientes características:
