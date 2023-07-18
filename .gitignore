@@ -1,0 +1,27 @@
+# IntelliJ
+.idea
+*.iml
+*.iws
+
+# Java
+*.class
+
+# Directories
+target/
+out/
+build/
+
+# Logs
+*.log
+
+# Others
+*.tmp
+*.bak
+*.swp
+*.swo
+*.lastUpdated
+*.rej
+*.orig
+*.pyc
+*.save
+.DS_Store

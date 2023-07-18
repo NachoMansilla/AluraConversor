@@ -34,7 +34,14 @@ public class ConsumoAPI {
     private Map<String, Double> getCurrencyRatesFromApi() throws IOException {
         OkHttpClient client = new OkHttpClient();
 
-        String url = "https://api.currencyapi.com/v3/latest?apikey=pcwpWGQyGftiqAf3R9bUEzOFRqQPILZ2FLHi0KcC";
+        String apiKey = System.getenv("API_KEY");
+        if (apiKey == null || apiKey.isEmpty()) {
+            System.out.println("API Key no encontrada, se utilizara una api para test");
+            apiKey =  "cur_live_dSdqzXDZpHNiVByi6sdEtE1eRxymgX1h5lbDRw7Z";
+
+        }
+
+        String url = "https://api.currencyapi.com/v3/latest?apikey=" + apiKey;
 
         Request request = new Request.Builder()
                 .url(url)

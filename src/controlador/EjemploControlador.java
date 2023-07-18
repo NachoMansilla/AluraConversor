@@ -76,9 +76,9 @@ public class EjemploControlador implements Initializable {
                         resultadoConversion = Double.toString((calculoIntercambio.calcular(cantidadAConvertir, codigoFrom, codigoTo)));
                         cantidadTo.setText(resultadoConversion);
                     }
-                    System.out.println("El nuevo valor del TextFieldFrom es: " + newValue);
+                    //System.out.println("El nuevo valor del TextFieldFrom es: " + newValue);
                 } catch (NumberFormatException e) {
-                    System.out.println("Solo se deben ingresar numeros!");
+                    //System.out.println("Solo se deben ingresar numeros!");
                 }
             }
         });
@@ -86,10 +86,8 @@ public class EjemploControlador implements Initializable {
         cantidadTo.textProperty().addListener((observable, oldValue, newValue) -> {
             if (!newValue.matches("\\d*(\\.\\d*)?")) {
                 cantidadFrom.setText(oldValue);
-            } else {
-                System.out.println("Solo se deben ingresar numeros");
             }
-            System.out.println("El nuevo valor del TextFieldTo es: " + newValue);
+            //System.out.println("El nuevo valor del TextFieldTo es: " + newValue);
         });
 
 
@@ -114,7 +112,7 @@ public class EjemploControlador implements Initializable {
         // Este bloque permite que el texto ingresado por el usuario determine la selección,
         // pero no completa automáticamente el texto del usuario.
         autoCompletionBindingFrom.setOnAutoCompleted(event -> {
-            System.out.println("Auto-completado con: " + event.getCompletion());
+            //System.out.println("Auto-completado con: " + event.getCompletion());
         });
 
         // Agregar un listener para ocultar el menú desplegable cuando el usuario empiece a escribir
@@ -183,15 +181,6 @@ public class EjemploControlador implements Initializable {
 
 
     @FXML
-    private void click(ActionEvent event) {
-
-
-        System.out.println("controlador.EjemploControlador.click()");
-
-
-
-    }
-    @FXML
     private void handleComboBoxSelection(ActionEvent event) {
         String selectedValueFrom = selectorPaisFrom.getSelectionModel().getSelectedItem();
         String selectedValueTo = selectorPaisTo.getSelectionModel().getSelectedItem();
@@ -203,12 +192,6 @@ public class EjemploControlador implements Initializable {
             cantidadTo.setText(resultadoConversion);
         }
 
-
-        if (selectedValueFrom != null) {
-            System.out.println("Selected value from: " + selectedValueFrom);
-        }
-        if (selectedValueTo != null) {
-            System.out.println("Selected value to: " + selectedValueTo);
-        }
+        
     }
 }
